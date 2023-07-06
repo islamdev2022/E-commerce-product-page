@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" defer></script>
+    <title>Frontend Mentor | E-commerce product page</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="">
+        <ul>
+            <div class="nav">
+                <li id="coll" class="menu">Collections</li>
+                <li class="menu">Men</li>
+                <li class="menu">Women</li>
+                <li class="menu">About</li>
+                <li class="menu">Contact</li>
+            </div>
+            <div class="CP">
+                <li><img id="cart" src="images/icon-cart.svg" alt=""><p id="numitem">0</p></li>
+                <li><img id="av" src="images/image-avatar.png" width="50" alt=""></li>
+            </div>
+        </ul>
+        <div class="the-cart">
+            <h4>Cart</h4>
+            <hr id="cart-hr"> <div id="empty"><p>Your cart is empty .</p></div>
+            <div class="inside">
+               
+                <img class="" width="60" src="images/image-product-1-thumbnail.jpg" alt="">
+                <p class="same">Fall Limited Edition Sneakers</p><br>
+                <p id="mon" class="same">$125.00 * <span id="quantity">1</span> = $<span id="price"> </span></p>
+               <div id="delete"><img class="same"  src="images/icon-delete.svg" alt=""></div> <br>
+                <button class="check">Checkout</button>
+            </div>
+        </div>
+    </header>
+    <hr id="head-hr">
+    <div class="main">
+        <div class="left">
+            <img id="shown" src="images/image-product-1.jpg" width="480" alt=""><br>
+            <img id="p1"class="gallery-image" src="images/image-product-1-thumbnail.jpg" data-large-src="images/image-product-1.jpg" width="90" alt="">
+            <img id="p2"class="gallery-image" src="images/image-product-2-thumbnail.jpg" data-large-src="images/image-product-2.jpg"width="90" alt="">
+            <img id="p3"class="gallery-image" src="images/image-product-3-thumbnail.jpg" data-large-src="images/image-product-3.jpg" width="90" alt="">
+            <img id="p4"class="gallery-image" src="images/image-product-4-thumbnail.jpg" data-large-src="images/image-product-4.jpg"width="90" alt="">
+        </div>
+        <div class="right">
+            <h5>SNEAKERS COMPANY</h5>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <div class="dis">
+                <h2>$125.00</h2>
+                <p id="dis"><b>50%</p></b>
+            </div>
+            <p id="bdis">$250.00</p>
+            <div class="numadd">
+                <div class="num"><img id="minus" src="images/icon-minus.svg" alt="">
+                    <input type="number"placeholder="0"> <img id="plus" src="images/icon-plus.svg" alt="">
+                </div> 
+                <button id="add-cart"> <img id="cart"src="images/imgcar2.svg" alt=""> Add to cart</button>
+            </div>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal">
+              <img src="images/icon-close.svg" class="close-btn">
+              <div class="modal-content">
+                <img src="" alt="Enlarged Image" class="enlarged-image">
+              </div>
+              <img src="images/icon-previous.svg" class="arrow prev">
+              <img src="images/icon-next.svg" class="arrow next">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
